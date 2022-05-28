@@ -2,6 +2,8 @@ package com.example.tarea2;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
@@ -76,11 +78,32 @@ public class LampControlView extends VBox {
         VBox colores = new VBox(rh,gh,bh);
         colores.setSpacing(5);
         control.setBottom(colores);
-        VBox vb = new VBox();
-        Label label= new Label("On/Off");
-        vb.getChildren().add(label);
-        vb.setAlignment(Pos.CENTER);
-        control.setTop(vb);
+        HBox channels = new HBox();
+        Label label= new Label(""+lampControl.getCurrentChannel());
+        Button left= new Button();
+        left.setStyle("-fx-shape: 'M 0 -3.5 v 7 l 4 -3.5 z';-fx-background-color: blue; -fx-stroke: black; ");
+        left.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                lampControl.changeChannelLeft();
+                label.setText(""+lampControl.getCurrentChannel());
+            }
+        });
+        Button right=new Button();
+        right.setStyle("-fx-shape: 'M 0 -3.5 v 7 l 4 -3.5 z';-fx-background-color: blue; -fx-stroke: black");
+        right.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                lampControl.changeChannelRight();
+                label.setText(""+lampControl.getCurrentChannel());
+            }
+        });
+        left.setRotate(180);
+        channels.getChildren().addAll(left,label,right);
+        channels.setSpacing(10);
+        channels.setAlignment(Pos.CENTER);
+        channels.setBackground(new Background(new BackgroundFill(Color.WHITE,new CornerRadii(3),new Insets(0,50,0,50))));
+        control.setTop(channels);
         getChildren().add(control);
     }
 }

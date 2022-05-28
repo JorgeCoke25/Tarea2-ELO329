@@ -11,16 +11,16 @@ import javafx.stage.Stage;
 public class Stage3 extends Application {
     public void start(Stage primaryStage) {
         Cloud cloud = new Cloud();
-        Lamp lamp1 = new Lamp(2);
-        Lamp lamp2 =  new Lamp(3);
+        int lampcanales[] = {1,2};
+        Lamp lamp1 = new Lamp(lampcanales[0]);
+        Lamp lamp2 =  new Lamp(lampcanales[1]);
         cloud.addLamp(lamp1);
         cloud.addLamp(lamp2);
-        LampControl lampControl1 = new LampControl(2, cloud);
-        LampControl lampControl2 = new LampControl(3,cloud);
+        LampControl lampControl = new LampControl(lampcanales, cloud);
         HBox hBox = new HBox(20);
         hBox.setPadding(new Insets(20));
         hBox.setAlignment(Pos.CENTER);
-        hBox.getChildren().addAll(lamp1.getView(), lampControl1.getView(), lamp2.getView(),lampControl2.getView());
+        hBox.getChildren().addAll(lamp1.getView(), lamp2.getView(), lampControl.getView());
         BorderPane pane = new BorderPane();
         pane.setPadding(new Insets(20));
         pane.setBottom(hBox);
