@@ -26,6 +26,7 @@ public class LampView extends Group {
                 50d,20d,
                 -10d,20d
         });
+        top.setStyle("-fx-stroke: black");
         top.setFill(Color.rgb(0,0,0));
         this.lampshade=top;
         getChildren().addAll(base,lampshade);
