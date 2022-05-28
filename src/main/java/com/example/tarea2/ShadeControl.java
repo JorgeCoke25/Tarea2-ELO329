@@ -1,3 +1,6 @@
+package com.example.tarea2;
+
+import com.example.tarea2.Cloud;
 import javafx.scene.layout.BorderPane;
 
 public class ShadeControl extends DomoticDeviceControl{

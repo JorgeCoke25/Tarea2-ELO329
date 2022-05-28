@@ -1,3 +1,5 @@
+package com.example.tarea2;
+
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 

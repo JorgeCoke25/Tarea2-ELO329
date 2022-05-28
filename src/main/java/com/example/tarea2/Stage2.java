@@ -1,3 +1,6 @@
+package com.example.tarea2;
+
+import com.example.tarea2.*;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;

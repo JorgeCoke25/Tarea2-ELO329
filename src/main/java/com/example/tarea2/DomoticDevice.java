@@ -1,3 +1,5 @@
+package com.example.tarea2;
+
 public abstract class DomoticDevice {
     public DomoticDevice(int ch){
         channel = ch;
