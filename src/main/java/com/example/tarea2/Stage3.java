@@ -29,7 +29,7 @@ public class Stage3 extends Application {
         pane.setPadding(new Insets(20));
         pane.setBottom(hBox);
         RollerShade rs1 = new RollerShade(shadeCanales[0], 2, 150, 150,media1);
-        RollerShade rs2 = new RollerShade(shadeCanales[1], 4, 304, 361,media2);
+        RollerShade rs2 = new RollerShade(shadeCanales[1], 4, 360, 202.5,media2);
         cloud.addRollerShade(rs1);
         cloud.addRollerShade(rs2);
         HBox hBox1 = new HBox(20);

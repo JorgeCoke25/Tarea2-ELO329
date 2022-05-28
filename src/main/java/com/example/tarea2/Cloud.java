@@ -66,7 +66,6 @@ public class Cloud {
     public void startShadeDown(int channel){
         ArrayList<DomoticDevice> domoticDevices;
         domoticDevices = getDomoticDeviceAtChannel(rollerShades, channel);
-        System.out.println(domoticDevices);
         for (DomoticDevice dd : domoticDevices) {
             RollerShade rs=(RollerShade)dd;
             rs.startDown();
