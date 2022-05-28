@@ -12,15 +12,25 @@ public class RollerShadeView extends Group {
         background.setFill(Color.BLUE);  // I chose Blue
         getChildren().add(background);
 
-        cloth = new Rectangle (/* ¿?*/);
+        cloth = new Rectangle (0,5,width,maxLength-10);
         cloth.setFill(color);
+        cloth.setStroke(Color.BLACK);
         getChildren().add(cloth);
 
         // Rolled up shade cloth
         Ellipse rightSide = new Ellipse(width, radius,radius/2,radius);
         rightSide.setFill(color);
         rightSide.setStroke(Color.BLACK);
-        //¿?
+        getChildren().add(rightSide);
+
+        Ellipse leftsize = new Ellipse(0, radius,radius/2,radius);
+        leftsize.setFill(color);
+        leftsize.setStroke(Color.BLACK);
+        getChildren().add(leftsize);
+
+        Rectangle stick = new Rectangle(0,0,width,radius*2);
+        stick.setFill(color);
+        getChildren().add(stick);
     }
     public void setLength(double length) {
         // ¿?
