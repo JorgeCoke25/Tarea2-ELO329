@@ -1,6 +1,5 @@
 package com.example.tarea2;
 
-import com.example.tarea2.*;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -9,17 +8,19 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
-public class Stage2 extends Application {
+public class Stage3 extends Application {
     public void start(Stage primaryStage) {
-        int lampChannel=1;
         Cloud cloud = new Cloud();
-        Lamp lamp = new Lamp(lampChannel);
-        cloud.addLamp(lamp);
-        LampControl lampControl = new LampControl(lampChannel, cloud);
+        Lamp lamp1 = new Lamp(2);
+        Lamp lamp2 =  new Lamp(3);
+        cloud.addLamp(lamp1);
+        cloud.addLamp(lamp2);
+        LampControl lampControl1 = new LampControl(2, cloud);
+        LampControl lampControl2 = new LampControl(3,cloud);
         HBox hBox = new HBox(20);
         hBox.setPadding(new Insets(20));
         hBox.setAlignment(Pos.CENTER);
-        hBox.getChildren().addAll(lamp.getView(), lampControl.getView());
+        hBox.getChildren().addAll(lamp1.getView(), lampControl1.getView(), lamp2.getView(),lampControl2.getView());
         BorderPane pane = new BorderPane();
         pane.setPadding(new Insets(20));
         pane.setBottom(hBox);
