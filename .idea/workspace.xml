@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="67d3f5ac-f7dd-4db9-ab7d-dde3f1e8ce0e" name="Changes" comment="Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea2/LampControlView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea2/LampControlView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea2/LampView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea2/LampView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea2/RollerShade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea2/RollerShade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea2/RollerShadeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea2/RollerShadeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea2/ShadeControlView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea2/ShadeControlView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +44,16 @@
       <recent name="C:\Users\jorge\Desktop\Tarea2-ELO329\src\main\java\com\example\tarea2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.example.tarea2.Stage1">
+  <component name="RunManager" selected="Application.com.example.tarea2.Stage2">
     <configuration name="Stage1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Stage1" />
+      <module name="Tarea2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Stage2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Stage2" />
       <module name="Tarea2" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -64,8 +72,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.example.tarea2.Stage2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.tarea2.Stage2" />
+      <module name="Tarea2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.tarea2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.example.tarea2.Stage2" />
+        <item itemvalue="Application.Stage2" />
         <item itemvalue="Application.com.example.tarea2.Stage1" />
         <item itemvalue="Application.Stage1" />
       </list>
