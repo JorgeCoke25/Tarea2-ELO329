@@ -34,7 +34,7 @@ public class ShadeControlView extends BorderPane {
         ad.getChildren().add(arrowDown);
         setTop(au);
         setBottom(ad);
-        setBackground(new Background(new BackgroundFill(Color.BLUE,new CornerRadii(3), new Insets(0,-5,0,-5))));
+        setBackground(new Background(new BackgroundFill(Color.BLUE,new CornerRadii(5), new Insets(-6))));
     }
 
 

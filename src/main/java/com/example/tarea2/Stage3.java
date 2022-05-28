@@ -30,7 +30,7 @@ public class Stage3 extends Application {
         pane.setCenter(rs.getView());
         ShadeControl shadeControl = new ShadeControl(shadeChannel,cloud);
         hBox.getChildren().add(0,shadeControl.getView());
-        Scene scene = new Scene(pane, 300, 350);
+        Scene scene = new Scene(pane, 600, 350);
         primaryStage.setTitle("Domotic Devices Simulator");
         primaryStage.setScene(scene);
         primaryStage.show();
