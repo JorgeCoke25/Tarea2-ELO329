@@ -12,7 +12,7 @@ public class RollerShadeView extends Group {
         background.setFill(Color.BLUE);  // I chose Blue
         getChildren().add(background);
 
-        cloth = new Rectangle (0,5,width,maxLength-10);
+        cloth = new Rectangle (0,5,width,length);
         cloth.setFill(color);
         cloth.setStroke(Color.BLACK);
         getChildren().add(cloth);
@@ -33,7 +33,7 @@ public class RollerShadeView extends Group {
         getChildren().add(stick);
     }
     public void setLength(double length) {
-        // ¿?
+        cloth.setHeight(length);
     }
     private Rectangle cloth;
 }
