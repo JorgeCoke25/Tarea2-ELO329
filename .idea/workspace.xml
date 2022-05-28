@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67d3f5ac-f7dd-4db9-ab7d-dde3f1e8ce0e" name="Changes" comment="Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea2/LampControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea2/LampControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea2/LampControlView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea2/LampControlView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea2/Stage3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea2/Stage3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea2/Lamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea2/Lamp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +126,7 @@
       <workItem from="1653695109482" duration="7245000" />
       <workItem from="1653704873383" duration="3083000" />
       <workItem from="1653746572118" duration="28000" />
-      <workItem from="1653753393395" duration="9573000" />
+      <workItem from="1653753393395" duration="10010000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial">
       <created>1653691446645</created>

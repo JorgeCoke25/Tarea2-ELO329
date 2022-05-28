@@ -32,15 +32,18 @@ public class Lamp {
 
     public void Red(short r) {
         this.r=r;
-        view.setColor(this.r,g,b);
+        if (state==LampState.OFF) view.setColor((short)0,(short)0, (short)0);
+        else view.setColor(this.r,g,b);
     }
     public void Green(short g) {
         this.g=g;
-        view.setColor(this.r,g,b);
+        if (state==LampState.OFF) view.setColor((short)0,(short)0, (short)0);
+        else view.setColor(r,this.g,b);
     }
     public void Blue(short b) {
         this.b=b;
-        view.setColor(this.r,g,b);
+        if (state==LampState.OFF) view.setColor((short)0,(short)0, (short)0);
+        else view.setColor(r,g,this.b);
     }
     public Node getView() {
         return view;
