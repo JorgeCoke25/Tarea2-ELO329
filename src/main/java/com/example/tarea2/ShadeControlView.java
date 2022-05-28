@@ -38,6 +38,7 @@ public class ShadeControlView extends BorderPane {
         Button arrowLeft= new Button();
         arrowLeft.setOnAction(event -> {
             sc.changeChannelLeft();
+            channelButton.setText(""+sc.getChannel());
         });
         VBox al= new VBox();
         al.setAlignment(Pos.CENTER_LEFT);
@@ -48,6 +49,7 @@ public class ShadeControlView extends BorderPane {
         Button arrowRight = new Button();
         arrowRight.setOnAction(event -> {
             sc.changeChannelRight();
+            channelButton.setText(""+sc.getChannel());
         });
         VBox ar= new VBox();
         ar.setAlignment(Pos.CENTER_RIGHT);
