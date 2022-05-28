@@ -13,11 +13,33 @@ public class Cloud {
     public void addRollerShade(RollerShade rs){
         rollerShades.add(rs);
     }
+
     public Lamp getLampAtChannel( int channel){
         for (Lamp l: lamps)
             if (l.getChannel() ==channel)
                 return l;
         return null;
+    }
+    public void changeRed(int channel,short r){
+        for (Lamp lamp : lamps) {
+            if (lamp.getChannel()==channel) {
+                lamp.Red(r);
+            }
+        }
+    }
+    public void changeGreen(int channel,short g){
+        for (Lamp lamp : lamps) {
+            if (lamp.getChannel()==channel) {
+                lamp.Green(g);
+            }
+        }
+    }
+    public void changeBlue(int channel, short b){
+        for (Lamp lamp : lamps) {
+            if (lamp.getChannel()==channel) {
+                lamp.Blue(b);
+            }
+        }
     }
     public void changeLampPowerState(int channel){
         Lamp l=getLampAtChannel(channel);
