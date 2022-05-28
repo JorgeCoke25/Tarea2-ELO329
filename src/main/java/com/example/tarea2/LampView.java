@@ -19,11 +19,19 @@ public class LampView extends Group {
                 22d, 50d,
                 22d, 20d});
         base.setFill(Color.GREEN);
-        // ¿?
-        getChildren().addAll(base /* ¿? */);
+        Polygon top = new Polygon();
+        top.getPoints().addAll(new Double[]{
+                5d,-20d,
+                35d,-20d,
+                50d,20d,
+                -10d,20d
+        });
+        top.setFill(Color.rgb(0,0,0));
+        this.lampshade=top;
+        getChildren().addAll(base,lampshade);
     }
     public void setColor(short r, short g, short b){
-        // ¿?
+        this.lampshade.setFill(Color.rgb(r,g,b));
     }
     private Polygon lampshade;
 }

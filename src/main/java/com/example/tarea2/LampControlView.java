@@ -7,8 +7,8 @@ import javafx.scene.layout.VBox;
 
 public class LampControlView extends VBox {
     public LampControlView(LampControl lampControl) {
-        Image img = new Image("rsc/powerImage.jpg");
+        Image img = new Image(getClass().getResource("rsc/powerImage.jpg").toString());
         ImageView view = new ImageView(img);
-        // ¿?
+        getChildren().add(view);
     }
 }
