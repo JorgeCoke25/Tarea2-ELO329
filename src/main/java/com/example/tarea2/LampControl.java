@@ -25,7 +25,6 @@ public class LampControl {
     public void changeChannelRight(){
         if(this.currentChannel!=channels[channels.length-1]){
             indexChannel+=1;
-            System.out.println(indexChannel);
             currentChannel=channels[indexChannel];
         }
     }

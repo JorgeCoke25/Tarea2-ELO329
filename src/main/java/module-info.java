@@ -10,6 +10,7 @@ module com.example.tarea2 {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires javafx.media;
 
     opens com.example.tarea2 to javafx.fxml;
     exports com.example.tarea2;

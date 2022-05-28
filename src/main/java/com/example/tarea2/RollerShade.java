@@ -5,16 +5,17 @@ import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
+import javafx.scene.media.Media;
 import javafx.scene.paint.Color;
 import javafx.util.Duration;
 
 public class RollerShade extends DomoticDevice {
-    public RollerShade (int channel, double alpha, double width, double len) {
+    public RollerShade (int channel, double alpha, double width, double len, Media media) {
         super(channel);
         motor = new Motor(alpha);
         MaxShadeLength = len;
         this.length = 0;  // Start with roller shade closed.
-        view = new RollerShadeView(MaxShadeLength, width, length, RADIUS, Color.GREEN);
+        view = new RollerShadeView(MaxShadeLength, width, length, RADIUS,Color.GREEN,media);
     }
     public Group getView() { return view;}
     public void startUp(){
@@ -58,16 +59,17 @@ public class RollerShade extends DomoticDevice {
                     if((length+increment)<=MaxShadeLength){
                         length+=increment;
                         length= Math.round(length*100.0)/100.0;
+                        view.setLength(length);
                         break;
                     }
                 case UPWARD:
                     if((length-increment)>=0){
                         length-=increment;
                         length= Math.round(length*100.0)/100.0;
+                        view.setLength(length);
                         break;
                     }
             }
-            view.setLength(length);
         }
         private double alpha;
         private MotorState state;
