@@ -12,6 +12,7 @@ public class ShadeControl extends DomoticDeviceControl{
     public void startUp(){
         cloud.startShadeUp(getChannel());
     }
+
     public void startDown(){
         cloud.startShadeDown(getChannel());
     }
