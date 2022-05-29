@@ -43,5 +43,9 @@ public class Stage4 extends Application {
         primaryStage.setTitle("Domotic Devices Simulator");
         primaryStage.setScene(scene);
         primaryStage.show();
+
+    }
+    public static void main(String[] args) {
+        launch();
     }
 }
