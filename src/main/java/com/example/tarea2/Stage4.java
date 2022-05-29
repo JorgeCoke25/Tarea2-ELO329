@@ -9,7 +9,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.media.Media;
 import javafx.stage.Stage;
 
-public class Stage3 extends Application {
+public class Stage4 extends Application {
     public void start(Stage primaryStage) {
         Media media1 = new Media("http://profesores.elo.utfsm.cl/~agv/elo329/1s22/Assignments/20220430_100849.mp4");
         Media media2 = new Media("http://profesores.elo.utfsm.cl/~agv/elo329/1s22/Assignments/20220430_101027.mp4");
