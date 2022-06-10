@@ -13,9 +13,11 @@ import javafx.scene.layout.VBox;
 
 public class LampControlView extends VBox {
     public LampControlView(LampControl lampControl) {
-        Image img = new Image(getClass().getResource("rsc/powerImage.jpg").toString());
+        Image img = new Image("https://www.freeiconspng.com/thumbs/power-button-icon/power-button-icon-31.png");
         ImageView view = new ImageView(img);
-
+        view.setFitHeight(50);
+        view.setPreserveRatio(true);
+        
         BorderPane control= new BorderPane();
         control.setStyle("-fx-background-color: green");
 
